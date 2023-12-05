@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 // import { login } from '@api/auth/user';
 const code = ref('');
 const getLogin = () => {
@@ -13,6 +12,13 @@ const getLogin = () => {
   });
   console.log(789);
 };
+const navigateTo = () => {
+  console.log(111);
+  uni.navigateTo({
+    url: '/pages/shop/store/store'
+  });
+};
+
 const getPhoneNumber = (e) => {
   getLogin();
   // 不允许授权
@@ -20,8 +26,8 @@ const getPhoneNumber = (e) => {
     return;
   }
 
-  let encryptedData = e.detail.encryptedData;
-  let iv = e.detail.iv;
+  // let encryptedData = e.detail.encryptedData;
+  // let iv = e.detail.iv;
   // login({
   //   encryptedData,
   //   iv,
@@ -61,9 +67,13 @@ const getPhoneNumber = (e) => {
       <img class="img" src="@/static/login/img_Illustration_login.png" alt="" />
     </div>
     <div class="login_tip">请完成授权以继续使用</div>
-    <button class="login_btn" open-type="getPhoneNumber" @getphonenumber="getPhoneNumber">
+    <!-- <button class="login_btn" open-type="getPhoneNumber" @getphonenumber="getPhoneNumber">
       <img class="img" src="@/static/login/ico_btn_wechat_white.png" alt="" />
       <span class="span" @click="wxlogin">微信账号一键登录</span>
+    </button> -->
+    <button class="login_btn"  @click="navigateTo">
+      <img class="img" src="@/static/login/ico_btn_wechat_white.png" alt="" />
+      <span class="span">微信账号一键登录</span>
     </button>
   </div>
 </template>

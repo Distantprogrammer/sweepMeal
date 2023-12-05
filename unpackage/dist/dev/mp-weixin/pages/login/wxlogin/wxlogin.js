@@ -4,31 +4,18 @@ const common_assets = require("../../../common/assets.js");
 const _sfc_main = {
   __name: "wxlogin",
   setup(__props) {
-    const code = common_vendor.ref("");
-    const getLogin = () => {
-      common_vendor.index.login({
-        provider: "weixin",
-        success: (res) => {
-          console.log(res);
-          code.value = res.code;
-        }
+    common_vendor.ref("");
+    const navigateTo = () => {
+      console.log(111);
+      common_vendor.index.navigateTo({
+        url: "/pages/shop/store/store"
       });
-      console.log(789);
-    };
-    const getPhoneNumber = (e) => {
-      getLogin();
-      if (e.detail.errMsg !== "getPhoneNumber:ok") {
-        return;
-      }
-      e.detail.encryptedData;
-      e.detail.iv;
     };
     return (_ctx, _cache) => {
       return {
         a: common_assets._imports_0,
         b: common_assets._imports_1,
-        c: common_vendor.o((...args) => _ctx.wxlogin && _ctx.wxlogin(...args)),
-        d: common_vendor.o(getPhoneNumber)
+        c: common_vendor.o(navigateTo)
       };
     };
   }

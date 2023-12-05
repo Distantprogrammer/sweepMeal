@@ -4,6 +4,10 @@ const common_vendor = require("./common/vendor.js");
 const store_index = require("./store/index.js");
 if (!Math) {
   "./pages/login/wxlogin/wxlogin.js";
+  "./pages/my/my/my.js";
+  "./pages/shop/store/store.js";
+  "./pages/order/order.js";
+  "./pages/order/orderPay.js";
 }
 const _sfc_main = {
   onLaunch: function() {

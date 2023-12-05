@@ -1,0 +1,1 @@
+<scroll-view class="leftTabBar data-v-6c7c3ef7" scroll-y show-scrollbar="{{false}}" scroll-with-animation="{{true}}"><view wx:for="{{a}}" wx:for-item="item" wx:key="e" class="{{['leftTabBar_item', 'data-v-6c7c3ef7', item.b, item.c, item.d]}}" bindtap="{{item.f}}"><label class="span data-v-6c7c3ef7">{{item.a}}</label></view></scroll-view>

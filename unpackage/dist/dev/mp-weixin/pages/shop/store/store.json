@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "店铺",
+  "usingComponents": {
+    "left-tab-bar": "./components/leftTabBar",
+    "right-content": "./components/rightContent",
+    "shop-cart": "./components/shopCart"
+  }
+}

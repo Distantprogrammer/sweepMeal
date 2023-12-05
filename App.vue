@@ -61,7 +61,8 @@
 	@import '@/uni_modules/uni-scss/index.scss';
 	/* #ifndef APP-PLUS-NVUE */
 	/* uni.css - 通用组件、模板样式库，可以当作一套ui库应用 */
-	@import './common/uni.css';
+	@import 'commom.scss';
+  @import './common/uni.css';
 	@import '@/static/customicons.css';
 	/* H5 兼容 pc 所需 */
 	/* #ifdef H5 */

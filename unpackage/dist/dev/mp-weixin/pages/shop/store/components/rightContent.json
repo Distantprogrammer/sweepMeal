@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "goods-number-box": "../../../../components/goodsNumberBox",
+    "specification-select-box": "../../../../components/specificationSelectBox"
+  }
+}
