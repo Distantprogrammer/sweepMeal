@@ -151,6 +151,11 @@ const _sfc_main = {
         emit("update:modelValue", status.show);
       }
     };
+    const buyShop = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/order/orderPay"
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.p({
@@ -174,11 +179,12 @@ const _sfc_main = {
         }),
         c: common_assets._imports_0$2,
         d: common_assets._imports_1$2,
-        e: common_vendor.sr(popup, "1623d57b-0", {
+        e: common_vendor.o(buyShop),
+        f: common_vendor.sr(popup, "1623d57b-0", {
           "k": "popup"
         }),
-        f: common_vendor.o(onPopupChange),
-        g: common_vendor.p({
+        g: common_vendor.o(onPopupChange),
+        h: common_vendor.p({
           type: "bottom",
           ["background-color"]: "#fff"
         })

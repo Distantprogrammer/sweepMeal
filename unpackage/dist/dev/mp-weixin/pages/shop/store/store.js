@@ -18,6 +18,11 @@ const _sfc_main = {
     const onShopCartOpen = () => {
       shopCartDialogVisible.value = true;
     };
+    const buyShop = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/order/orderPay"
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_assets._imports_0$1,
@@ -29,8 +34,9 @@ const _sfc_main = {
         e: common_assets._imports_1$1,
         f: common_assets._imports_1$2,
         g: common_vendor.o(onShopCartOpen),
-        h: common_vendor.o(($event) => shopCartDialogVisible.value = $event),
-        i: common_vendor.p({
+        h: common_vendor.o(buyShop),
+        i: common_vendor.o(($event) => shopCartDialogVisible.value = $event),
+        j: common_vendor.p({
           modelValue: shopCartDialogVisible.value
         })
       };

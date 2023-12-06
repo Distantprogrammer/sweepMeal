@@ -88,6 +88,11 @@ const onPopupChange = (status) => {
     emit('update:modelValue', status.show);
   }
 };
+const buyShop = () => {
+  uni.navigateTo({
+    url: '/pages/order/orderPay',
+  });
+};
 </script>
 
 <template>
@@ -128,7 +133,7 @@ const onPopupChange = (status) => {
             <span class="span">购物车</span>
             <i class="corner_mark">22</i>
           </div>
-          <div class="button">立即购买</div>
+          <div class="button" @click="buyShop">立即购买</div>
         </div>
       </div>
     </div>

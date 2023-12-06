@@ -5,13 +5,18 @@ import leftTabBar from './components/leftTabBar.vue';
 import rightContent from './components/rightContent.vue';
 import shopCart from './components/shopCart.vue';
 const scrollIntoDomClass = ref(''); // 滚动到指定位置的元素
-const shopCartDialogVisible = ref(false) // 购物车dialog显示隐藏
+const shopCartDialogVisible = ref(false); // 购物车dialog显示隐藏
 const changeLeftBar = ({ item, index }) => {
   scrollIntoDomClass.value = `item-${index}`;
 };
-const onShopCartOpen = () =>{
-  shopCartDialogVisible.value = true
-}
+const onShopCartOpen = () => {
+  shopCartDialogVisible.value = true;
+};
+const buyShop = () => {
+  uni.navigateTo({
+    url: '/pages/order/orderPay',
+  });
+};
 </script>
 
 <template>
@@ -44,7 +49,7 @@ const onShopCartOpen = () =>{
         <span class="span">购物车</span>
         <i class="corner_mark">22</i>
       </div>
-      <div class="button">立即购买</div>
+      <div class="button" @click="buyShop">立即购买</div>
     </div>
   </div>
   <shop-cart v-model="shopCartDialogVisible"></shop-cart>
