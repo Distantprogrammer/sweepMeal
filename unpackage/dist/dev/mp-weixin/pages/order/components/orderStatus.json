@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "radio-checkbox": "../../../components/radioCheckbox"
+  }
+}

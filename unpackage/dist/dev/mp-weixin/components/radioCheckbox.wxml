@@ -1,0 +1,1 @@
+<view class="radioCheckbox data-v-ba076113" bindtap="{{d}}"><view class="{{['radioCheck_icon', 'data-v-ba076113', a && 'is_checked']}}"></view><view class="{{['radioCheck_lable', 'data-v-ba076113', c && 'is_checked']}}"><block wx:if="{{$slots.d}}"><slot></slot></block><block wx:else>{{b}}</block></view></view>

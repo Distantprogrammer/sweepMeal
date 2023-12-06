@@ -7811,7 +7811,7 @@ const globalStyle = {
   pageOrientation: "portrait",
   navigationBarTitleText: "Hello uniapp",
   navigationBarTextStyle: "white",
-  navigationBarBackgroundColor: "#007AFF",
+  navigationBarBackgroundColor: "#2493F1",
   backgroundColor: "#F8F8F8",
   backgroundColorTop: "#F4F5F6",
   backgroundColorBottom: "#F4F5F6",
@@ -11332,6 +11332,7 @@ function main() {
 }
 main();
 exports._export_sfc = _export_sfc;
+exports.computed = computed;
 exports.createSSRApp = createSSRApp;
 exports.createStore = createStore;
 exports.e = e;
@@ -11348,4 +11349,5 @@ exports.resolveComponent = resolveComponent;
 exports.s = s$1;
 exports.sr = sr;
 exports.t = t$1;
+exports.unref = unref;
 exports.watch = watch;
