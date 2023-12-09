@@ -26,7 +26,7 @@ const _sfc_main = {
     ...common_vendor.mapMutations(["setUniverifyErrorMsg", "setUniverifyLogin"])
   }
 };
-const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/App.vue"]]);
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/17467/Desktop/sweepMeal/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   app.use(store_index.store);

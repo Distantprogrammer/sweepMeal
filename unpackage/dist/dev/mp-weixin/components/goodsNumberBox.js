@@ -132,5 +132,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     i: common_vendor.o(($event) => $options._calcValue("plus"))
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-3f54bf51"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/components/goodsNumberBox.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-3f54bf51"], ["__file", "C:/Users/17467/Desktop/sweepMeal/components/goodsNumberBox.vue"]]);
 wx.createComponent(Component);

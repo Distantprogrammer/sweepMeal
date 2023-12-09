@@ -23,23 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.top-nav.data-v-93207a4f {
-  width: 750rpx;
-  height: 80rpx;
-  background: white;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.top-nav .nav-item.data-v-93207a4f {
-  position: relative;
-  padding: 5rpx 20rpx;
-  color: #333333;
-  font-size: 30rpx;
-  border-bottom: 2rpx solid transparent;
-}
-.top-nav .activate.data-v-93207a4f {
-  color: #2493f1;
-  border-bottom: 2rpx solid #2493f1;
+.list.data-v-c26a3c6f {
+  width: 710rpx;
+  margin: 20rpx auto 0;
 }

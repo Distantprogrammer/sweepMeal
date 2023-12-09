@@ -1,41 +1,47 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
-const common_assets = require("../../common/assets.js");
-if (!Array) {
-  const _component_leftTabBar = common_vendor.resolveComponent("leftTabBar");
-  const _component_rightContent = common_vendor.resolveComponent("rightContent");
-  const _component_shop_cart = common_vendor.resolveComponent("shop-cart");
-  (_component_leftTabBar + _component_rightContent + _component_shop_cart)();
+if (!Math) {
+  list();
 }
+const list = () => "./components/list.js";
 const _sfc_main = {
   __name: "order",
   setup(__props) {
-    const scrollIntoDomClass = common_vendor.ref("");
-    const shopCartDialogVisible = common_vendor.ref(true);
-    const changeLeftBar = ({ item, index }) => {
-      scrollIntoDomClass.value = `item-${index}`;
+    const activateIndex = common_vendor.ref(0);
+    const handelClick = (index) => {
+      activateIndex.value = index;
     };
-    const onShopCartOpen = () => {
-      shopCartDialogVisible.value = true;
-    };
+    const navList = common_vendor.ref([
+      {
+        name: "全部",
+        id: 0
+      },
+      {
+        name: "待支付",
+        id: 1
+      },
+      {
+        name: "待取餐",
+        id: 2
+      },
+      {
+        name: "退款售后",
+        id: 3
+      }
+    ]);
     return (_ctx, _cache) => {
       return {
-        a: common_assets._imports_0$1,
-        b: common_assets._imports_0$1,
-        c: common_vendor.o(changeLeftBar),
-        d: common_vendor.p({
-          scrollIntoDomClass: scrollIntoDomClass.value
-        }),
-        e: common_assets._imports_1$1,
-        f: common_assets._imports_1$2,
-        g: common_vendor.o(onShopCartOpen),
-        h: common_vendor.o(($event) => shopCartDialogVisible.value = $event),
-        i: common_vendor.p({
-          modelValue: shopCartDialogVisible.value
+        a: common_vendor.f(navList.value, (item, index, i0) => {
+          return {
+            a: common_vendor.t(item.name),
+            b: common_vendor.o(($event) => handelClick(index), item.id),
+            c: item.id,
+            d: index === activateIndex.value ? 1 : ""
+          };
         })
       };
     };
   }
 };
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-93207a4f"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/pages/order/order.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-93207a4f"], ["__file", "C:/Users/17467/Desktop/sweepMeal/pages/order/order.vue"]]);
 wx.createPage(MiniProgramPage);

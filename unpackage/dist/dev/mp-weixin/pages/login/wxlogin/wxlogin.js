@@ -20,5 +20,5 @@ const _sfc_main = {
     };
   }
 };
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-286fbaf5"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/pages/login/wxlogin/wxlogin.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-286fbaf5"], ["__file", "C:/Users/17467/Desktop/sweepMeal/pages/login/wxlogin/wxlogin.vue"]]);
 wx.createPage(MiniProgramPage);

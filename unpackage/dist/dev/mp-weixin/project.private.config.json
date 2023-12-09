@@ -5,7 +5,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/order/orderPay",
+          "pathName": "pages/order/order",
           "query": "",
           "launchMode": "default",
           "scene": null
