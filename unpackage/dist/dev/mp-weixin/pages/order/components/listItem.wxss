@@ -157,7 +157,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -35rpx;
+  right: -40rpx;
   width: 180rpx;
   height: 200rpx;
   display: flex;
