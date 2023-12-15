@@ -48,3 +48,6 @@
   height: 4rpx;
   background-color: #2493f1;
 }
+.list.data-v-93207a4f {
+  padding: 0 20rpx;
+}

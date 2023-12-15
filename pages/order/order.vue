@@ -73,4 +73,7 @@ const navList = ref([
     }
   }
 }
+.list{
+  padding: 0 20rpx;
+}
 </style>
