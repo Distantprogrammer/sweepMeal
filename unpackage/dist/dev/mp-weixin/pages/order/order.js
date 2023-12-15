@@ -1,9 +1,9 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
 if (!Math) {
-  list();
+  listItem();
 }
-const list = () => "./components/list.js";
+const listItem = () => "./components/listItem.js";
 const _sfc_main = {
   __name: "order",
   setup(__props) {
@@ -43,5 +43,5 @@ const _sfc_main = {
     };
   }
 };
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-93207a4f"], ["__file", "C:/Users/17467/Desktop/sweepMeal/pages/order/order.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-93207a4f"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/pages/order/order.vue"]]);
 wx.createPage(MiniProgramPage);

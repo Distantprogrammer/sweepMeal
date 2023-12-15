@@ -13,5 +13,5 @@ function _sfc_render(_ctx, _cache) {
     c: common_assets._imports_0$3
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-d36cf2f3"], ["__file", "C:/Users/17467/Desktop/sweepMeal/pages/order/components/orderItemDetails.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-d36cf2f3"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/pages/order/components/orderItemDetails.vue"]]);
 wx.createComponent(Component);

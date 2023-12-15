@@ -6,7 +6,8 @@
       <div class="info">
         <img
           class="picture"
-          src="https://img.js.design/assets/img/645601d44b4eef37079ccb59.png" />
+          src="https://img.js.design/assets/img/645601d44b4eef37079ccb59.png"
+        />
         <div class="text-box">
           <div class="title">得胜桥豆花米线</div>
           <div class="state">到店里吃</div>
@@ -24,12 +25,14 @@
         class="scroll-view_H commodity-box"
         scroll-x="true"
         @scroll="scroll"
-        scroll-left="120">
+        scroll-left="120"
+      >
         <div class="scroll-view-item_H" v-for="item in 12" :key="item">
           <div class="commodity">
             <img
               class="commodity-img"
-              src="https://img.js.design/assets/img/645601d44b4eef37079ccb5c.png" />
+              src="https://img.js.design/assets/img/645601d44b4eef37079ccb5c.png"
+            />
             <div class="commodity-title">我是商品标题我是商品标题</div>
           </div>
         </div>
@@ -81,6 +84,7 @@
           background-color: rgba(240, 248, 255, 1);
           border: rgba(36, 147, 241, 1) 1px solid;
           border-radius: 5rpx;
+          margin-top: 10rpx;
         }
       }
     }
@@ -101,7 +105,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 160rpx;
+      min-width: 160rpx;
       height: 140rpx;
       border: 2rpx solid rgba(179, 220, 255, 1);
       border-radius: 10rpx;
@@ -125,6 +129,9 @@
     .commodity-box {
       display: flex;
       justify-content: center;
+      overflow: hidden;
+      // width: auto;
+      flex: 1;
       .commodity {
         margin: 0 10rpx;
         &-img {
@@ -176,12 +183,8 @@
       }
     }
     .price-box {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -40rpx;
       width: 180rpx;
-      height: 200rpx;
+      height: 164rpx;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -205,11 +208,15 @@
     margin-top: 20rpx;
     margin-right: 30rpx;
     .button {
-      width: 152rpx;
+      padding: 0rpx 20rpx;
       height: 56rpx;
       line-height: 56rpx;
       border-radius: 28rpx;
       background: rgba(36, 147, 241, 1);
+      font-size: 28rpx;
+      font-weight: 500;
+      letter-spacing: 0rpx;
+      color: rgba(255, 255, 255, 1);
     }
   }
 }

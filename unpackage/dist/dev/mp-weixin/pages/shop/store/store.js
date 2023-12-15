@@ -43,5 +43,5 @@ const _sfc_main = {
     };
   }
 };
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-827f3a54"], ["__file", "C:/Users/17467/Desktop/sweepMeal/pages/shop/store/store.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-827f3a54"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/pages/shop/store/store.vue"]]);
 wx.createPage(MiniProgramPage);

@@ -1,10 +1,10 @@
 <script setup>
-import { ref } from 'vue'
-import list from './components/list.vue'
-const activateIndex = ref(0)
-const handelClick = index => {
-  activateIndex.value = index
-}
+import { ref } from 'vue';
+import listItem from './components/listItem.vue'
+const activateIndex = ref(0);
+const handelClick = (index) => {
+  activateIndex.value = index;
+};
 const navList = ref([
   {
     name: '全部',
@@ -22,7 +22,7 @@ const navList = ref([
     name: '退款售后',
     id: 3,
   },
-])
+]);
 </script>
 
 <template>
@@ -34,33 +34,43 @@ const navList = ref([
         @click="handelClick(index)"
         v-for="(item, index) in navList"
         :key="item.id"
-        :class="{ activate: index === activateIndex }">
+        :class="{ activate: index === activateIndex }"
+      >
         {{ item.name }}
       </div>
     </div>
-    <list />
+    <ul class="list">
+      <listItem/>
+    </ul>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .top-nav {
-  width: 750rpx;
-  height: 80rpx;
+  height: 60rpx;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 0 86rpx;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   .nav-item {
     position: relative;
-    padding: 5rpx 20rpx;
     color: rgba(51, 51, 51, 1);
+    font-weight: 500;
     font-size: 30rpx;
-    border-bottom: 2rpx solid transparent;
   }
   .activate {
-    color: rgba(36, 147, 241, 1);
-    border-bottom: 2rpx solid rgba(36, 147, 241, 1);
+    &::after{
+      content:"";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -13rpx;
+      width: 100%;
+      height:4rpx;
+      background-color: rgba(36, 147, 241, 1);
+    }
   }
 }
 </style>

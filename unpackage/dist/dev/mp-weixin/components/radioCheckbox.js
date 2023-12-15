@@ -42,5 +42,5 @@ const _sfc_main = {
     };
   }
 };
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-ba076113"], ["__file", "C:/Users/17467/Desktop/sweepMeal/components/radioCheckbox.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-ba076113"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/components/radioCheckbox.vue"]]);
 wx.createComponent(Component);

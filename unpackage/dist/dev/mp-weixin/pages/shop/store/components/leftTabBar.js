@@ -27,5 +27,5 @@ const _sfc_main = {
     };
   }
 };
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-6c7c3ef7"], ["__file", "C:/Users/17467/Desktop/sweepMeal/pages/shop/store/components/leftTabBar.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-6c7c3ef7"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/pages/shop/store/components/leftTabBar.vue"]]);
 wx.createComponent(Component);

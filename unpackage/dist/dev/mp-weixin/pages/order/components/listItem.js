@@ -16,5 +16,5 @@ function _sfc_render(_ctx, _cache) {
     })
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-74d95e9a"], ["__file", "C:/Users/17467/Desktop/sweepMeal/pages/order/components/listItem.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-74d95e9a"], ["__file", "C:/Users/唐/Desktop/扫码点餐/点餐/pages/order/components/listItem.vue"]]);
 wx.createComponent(Component);
