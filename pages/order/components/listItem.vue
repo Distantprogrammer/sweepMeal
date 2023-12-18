@@ -1,14 +1,20 @@
-<script setup></script>
+<script setup>
+const goOrderDetails = ()=>{
+  uni.navigateTo({
+    url: '/pages/order/orderDetails'
+  })
+}
+</script>
 
 <template>
-  <li class="item" v-for="item in 6" :key="item">
+  <div class="item" v-for="item in 6" :key="item">
     <div class="top">
       <div class="info">
         <img
           class="picture"
           src="https://img.js.design/assets/img/645601d44b4eef37079ccb59.png"
         />
-        <div class="text-box">
+        <div class="text-box" @click="goOrderDetails">
           <div class="title">得胜桥豆花米线</div>
           <div class="state">到店里吃</div>
         </div>
@@ -45,7 +51,7 @@
     <div class="footer">
       <button class="button" type="primary">切换菜单方向</button>
     </div>
-  </li>
+  </div>
 </template>
 
 <style lang="scss" scoped>

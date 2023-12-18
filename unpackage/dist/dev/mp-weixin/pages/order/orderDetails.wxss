@@ -23,7 +23,9 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.list.data-v-c26a3c6f {
-  width: 710rpx;
-  margin: 20rpx auto 0;
+.orderDetails_content.data-v-79497af2 {
+  padding-bottom: 100rpx;
+}
+.orderItemDetails.data-v-79497af2 {
+  margin: 20rpx 0;
 }

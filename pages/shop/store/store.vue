@@ -12,6 +12,11 @@ const changeLeftBar = ({ item, index }) => {
 const onShopCartOpen = () => {
   shopCartDialogVisible.value = true;
 };
+const goOrder = () => {
+  uni.navigateTo({
+    url: '/pages/order/order',
+  });
+}
 const buyShop = () => {
   uni.navigateTo({
     url: '/pages/order/orderPay',
@@ -39,7 +44,7 @@ const buyShop = () => {
     </div>
   </div>
   <div class="shop_buy">
-    <div class="shop_order">
+    <div class="shop_order" @click="goOrder">
       <img class="img" src="@/static/shop/ico_myorder.png" alt="" />
       <span class="span">订单</span>
     </div>

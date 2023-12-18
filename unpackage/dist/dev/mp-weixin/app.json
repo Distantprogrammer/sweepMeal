@@ -4,7 +4,8 @@
     "pages/my/my/my",
     "pages/shop/store/store",
     "pages/order/order",
-    "pages/order/orderPay"
+    "pages/order/orderPay",
+    "pages/order/orderDetails"
   ],
   "subPackages": [],
   "window": {

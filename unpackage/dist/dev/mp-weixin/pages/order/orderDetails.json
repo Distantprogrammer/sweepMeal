@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "order-status": "./components/orderStatus",
+    "order-item-details": "./components/orderItemDetails",
+    "order-info-details": "./components/orderInfoDetails"
+  }
+}

@@ -10,18 +10,18 @@ const navList = ref([
     name: '全部',
     id: 0,
   },
-  {
-    name: '待支付',
-    id: 1,
-  },
+  // {
+  //   name: '待支付',
+  //   id: 1,
+  // },
   {
     name: '待取餐',
     id: 2,
   },
-  {
-    name: '退款售后',
-    id: 3,
-  },
+  // {
+  //   name: '退款售后',
+  //   id: 3,
+  // },
 ]);
 </script>
 
@@ -39,26 +39,36 @@ const navList = ref([
         {{ item.name }}
       </div>
     </div>
-    <ul class="list">
+    <scroll-view class="list" scroll-y :show-scrollbar="false">
       <listItem/>
-    </ul>
+    </scroll-view>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.order-box{
+  background-color: #fff;
+  overflow: hidden;
+}
 .top-nav {
-  height: 60rpx;
+  height: 80rpx;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
   padding: 0 86rpx;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+ 
+ 
   .nav-item {
     position: relative;
     color: rgba(51, 51, 51, 1);
     font-weight: 500;
     font-size: 30rpx;
+    margin-left: 60rpx;
+    &:nth-child(1){
+    margin-left: 0;
+  }
   }
   .activate {
     &::after{
@@ -66,7 +76,7 @@ const navList = ref([
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -13rpx;
+      bottom: -23rpx;
       width: 100%;
       height:4rpx;
       background-color: rgba(36, 147, 241, 1);
@@ -74,6 +84,8 @@ const navList = ref([
   }
 }
 .list{
-  padding: 0 20rpx;
+  height: calc(100vh - 140rpx);
+  // padding: 0 20rpx;
+  padding-bottom: 80rpx;
 }
 </style>

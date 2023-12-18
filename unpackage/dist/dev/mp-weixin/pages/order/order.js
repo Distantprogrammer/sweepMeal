@@ -16,18 +16,18 @@ const _sfc_main = {
         name: "全部",
         id: 0
       },
-      {
-        name: "待支付",
-        id: 1
-      },
+      // {
+      //   name: '待支付',
+      //   id: 1,
+      // },
       {
         name: "待取餐",
         id: 2
-      },
-      {
-        name: "退款售后",
-        id: 3
       }
+      // {
+      //   name: '退款售后',
+      //   id: 3,
+      // },
     ]);
     return (_ctx, _cache) => {
       return {

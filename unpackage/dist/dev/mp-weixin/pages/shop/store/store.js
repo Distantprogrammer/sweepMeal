@@ -18,6 +18,11 @@ const _sfc_main = {
     const onShopCartOpen = () => {
       shopCartDialogVisible.value = true;
     };
+    const goOrder = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/order/order"
+      });
+    };
     const buyShop = () => {
       common_vendor.index.navigateTo({
         url: "/pages/order/orderPay"
@@ -32,11 +37,12 @@ const _sfc_main = {
           scrollIntoDomClass: scrollIntoDomClass.value
         }),
         e: common_assets._imports_1$1,
-        f: common_assets._imports_1$2,
-        g: common_vendor.o(onShopCartOpen),
-        h: common_vendor.o(buyShop),
-        i: common_vendor.o(($event) => shopCartDialogVisible.value = $event),
-        j: common_vendor.p({
+        f: common_vendor.o(goOrder),
+        g: common_assets._imports_1$2,
+        h: common_vendor.o(onShopCartOpen),
+        i: common_vendor.o(buyShop),
+        j: common_vendor.o(($event) => shopCartDialogVisible.value = $event),
+        k: common_vendor.p({
           modelValue: shopCartDialogVisible.value
         })
       };

@@ -7806,6 +7806,12 @@ const pages = [
     style: {
       navigationBarTitleText: "订单确定"
     }
+  },
+  {
+    path: "pages/order/orderDetails",
+    style: {
+      navigationBarTitleText: "订单详情"
+    }
   }
 ];
 const subPackages = [];
@@ -10261,7 +10267,7 @@ let statConfig = {
   appid: "__UNI__EB32FD3"
 };
 let titleJsons = {};
-titleJsons = { "pages/login/wxlogin/wxlogin": "登录", "pages/my/my/my": "我的", "pages/shop/store/store": "店铺", "pages/order/order": "我的订单", "pages/order/orderPay": "订单确定" };
+titleJsons = { "pages/login/wxlogin/wxlogin": "登录", "pages/my/my/my": "我的", "pages/shop/store/store": "店铺", "pages/order/order": "我的订单", "pages/order/orderPay": "订单确定", "pages/order/orderDetails": "订单详情" };
 const UUID_KEY = "__DC_STAT_UUID";
 const UUID_VALUE = "__DC_UUID_VALUE";
 function getUuid() {

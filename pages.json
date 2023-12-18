@@ -32,6 +32,12 @@
 			"style": {
 				"navigationBarTitleText": "订单确定"
 			}
+		},
+    {
+			"path": "pages/order/orderDetails",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
 		}
 ],
 	"subPackages": [],
